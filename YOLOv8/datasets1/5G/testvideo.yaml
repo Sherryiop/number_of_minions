@@ -1,0 +1,18 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: C:/Users/Hi1pp/ultralytics/datasets/5G # dataset root dir
+train: C:/Users/Hi1pp/ultralytics/datasets/5G/images/train
+val: C:/Users/Hi1pp/ultralytics/datasets/5G/images/train
+test: # test images (optional)
+
+nc : 8
+
+# Classes
+names:
+  0 : scewr_driver
+  1 : brush
+  2 : stickers
+  3 : part_A
+  4 : part_B
+  5 : part_C
+  6 : scews_box
+  

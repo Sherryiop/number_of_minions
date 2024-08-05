@@ -1,0 +1,5 @@
+執行:
+python xmltotxt.py -xml xml -out out
+
+執行前把要轉換的xml文件或資料夾放在xml資料夾中
+修改class.txt，標籤內容和順序要跟labelimg的class.txt 一樣

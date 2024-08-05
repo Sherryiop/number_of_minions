@@ -1,0 +1,15 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: C:/Users/Hi1pp/5G_YOLOv8/datasets/5G_robot # dataset root dir
+train: C:/Users/Hi1pp/5G_YOLOv8/datasets/5G_robot/images/train
+val: C:/Users/Hi1pp/5G_YOLOv8/datasets/5G_robot/images/train
+test: # test images (optional)
+
+nc : 3
+
+# Classes
+names:
+  0 : screw_driver
+  1 : brush
+  2 : stickers
+
+# yolo detect train data=C:/Users/Hi1pp/5G_YOLOv8/datasets/5G_robot/testvideo.yaml model=yolov8n.pt epochs=300 imgsz=640 patience=50 device=0 batch=8 
