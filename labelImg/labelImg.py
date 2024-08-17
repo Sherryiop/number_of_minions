@@ -27,7 +27,7 @@ except ImportError:
     from PyQt4.QtGui import *
     from PyQt4.QtCore import *
 
-import libs.resources
+import libs.resource
 from libs.constants import *
 from libs.lib import struct, newAction, newIcon, addActions, fmtShortcut, generateColorByText, generateColorFillByText
 from libs.settings import Settings
