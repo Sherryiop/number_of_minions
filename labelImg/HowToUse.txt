@@ -1,0 +1,5 @@
+先確認標籤，並修改標籤文件檔
+在data/predefined_classes.txt
+
+貼標軟體路徑
+cd labelImg/labelImg.py
