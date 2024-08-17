@@ -1,13 +1,11 @@
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-path: C:/Users/Hi1pp/5G_YOLOv8/datasets/count_minions # dataset root dir 
-train: C:/Users/Hi1pp/5G_YOLOv8/datasets/count_minions/images/train
-val: C:/Users/Hi1pp/5G_YOLOv8/datasets/count_minions/images/val
+path:  # dataset root dir 
+train:  # training set root dir
+val:  # val set root dir
 test: # test images (optional)
 
-nc : 1
+nc : 1 # the number of class
 
 # Classes
 names:
   0 : minions
-
-# yolo detect train data=C:/Users/Hi1pp/5G_YOLOv8/datasets/count_minions/testvideo.yaml model=yolov8n.pt epochs=250 imgsz=640 patience=50 device=0 batch=-1
