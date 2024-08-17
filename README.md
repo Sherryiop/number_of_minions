@@ -1,8 +1,12 @@
 # summer-class
+本專案將利用YOLOv8，辨識一張圖片中有幾隻小小兵  
+
+  
+若要了解更多YOLOv8相關資料，請參考: [YOLOv8 Github](https://github.com/ultralytics/ultralytics?tab=readme-ov-file)  |  [YOLOv8 語法](https://docs.ultralytics.com/)
 ## 下載專案
 
 #### 方法一
-在terminal確認要下載的目的地後，輸入以下文字:
+若有安裝[Git](https://ithelp.ithome.com.tw/articles/10322227)，在terminal確認要下載的目的地後，輸入以下文字:
 ```bash
 git clone https://github.com/Sherryiop/summer-class.git --depth 1 
 ```
@@ -18,7 +22,7 @@ git clone https://github.com/Sherryiop/summer-class.git --depth 1
 pip install -r requirement.txt
 ```
 ### 確認物件名稱
-請至predefined_classes.txt確認物件名稱及數量，文件路徑為summer-class\labelImg\data\predefined_classes.txt
+請至predefined_classes.txt確認物件名稱及數量，文件路徑為labelImg\data\predefined_classes.txt
 
 本次物件只有一個，所以predefined_classes.txt內容只有一行
 ```bash
@@ -71,6 +75,8 @@ names:
   0 : minions
 ```
 ### 模型訓練
+**預訓練模型下載**:[YOLOv8](https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8n.pt)
+
 **Dataset 格式**  
 
 資料格式必須遵守以下結構
@@ -87,6 +93,6 @@ names:
 
 確認資料夾格式正確後，輸入訓練指令
 ```bash
-yolo detect train data=C:/Users/Hi1pp/5G_YOLOv8/datasets/count_minions/testvideo.yaml model=yolov8n.pt epochs=250 imgsz=640 patience=50 device=0 batch=-1
+yolo detect train data=yaml路徑 model=yolov8n.pt epochs=250 imgsz=640 patience=50 device=0 batch=-1
 ```
 
